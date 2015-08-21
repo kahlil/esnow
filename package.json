@@ -15,7 +15,7 @@
   "author": "Kahlil Lechelt",
   "license": "MIT",
   "bin": {
-    "future": "cli.js"
+    "esnow": "bin/cli.js"
   },
   "dependencies": {
     "babelify": "^6.1.3",

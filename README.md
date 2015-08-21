@@ -1,20 +1,21 @@
-# _FUTURE.js_
+# ES_NOW_
 
-Write future JS in a common way with [Browserify]() and [Babelify]() including source maps support and [Uglifyify]() for production builds.
+The **_FUTURE_** is **_NOW_**.  
+Write future JavaScript in a common way with [Browserify]() and [Babelify]() including source maps support and [Uglifyify]() for production builds.
 
 ## Usage
 
-Install `future` with npm.
+Install `esnow` with npm.
 
 ```
-npm install future --save-dev
+npm install esnow --save-dev
 ```
 
 Use it in your package.json `scripts` field.
 
 ```js
 "scripts": {
-	"js": "future -e js/main.js -o out/js"
+	"js": "esnow -e js/main.js -o out/js"
 }
 ```
 
