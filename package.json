@@ -1,10 +1,10 @@
 {
-  "name": "future",
+  "name": "esnow",
   "version": "1.0.0",
   "description": "Write future JS in a common way with Browserify and Babelify including source maps support and Uglifyify for production builds.",
   "main": "index.js",
   "scripts": {
-    "test": "tape"
+    "test": "tape test/*.js"
   },
   "keywords": [
     "babel",
