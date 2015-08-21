@@ -1,0 +1,22 @@
+# EditorConfig is Awesome: http://editorconfig.org
+
+# Top-most EditorConfig file.
+root = true
+
+# Unix-style newlines with a newline ending every file.
+[*]
+end_of_line = lf
+insert_final_newline = true
+charset = utf-8
+indent_style = space
+indent_size = 2
+trim_trailing_whitespace = true
+
+# Indent HTML with 4 spaces for better readability.
+[*.html]
+indent_style = 4
+
+# Don't trim whitespace in Markdown in order to be able
+# to do two spaces for line breaks.
+[*.md]
+trim_trailing_whitespace = false

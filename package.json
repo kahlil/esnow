@@ -1,0 +1,33 @@
+{
+  "name": "future",
+  "version": "1.0.0",
+  "description": "Write future JS in a common way with Browserify and Babelify including source maps support and Uglifyify for production builds.",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape"
+  },
+  "keywords": [
+    "babel",
+    "browserify",
+    "sourcemaps",
+    "uglify"
+  ],
+  "author": "Kahlil Lechelt",
+  "license": "MIT",
+  "bin": {
+    "future": "cli.js"
+  },
+  "dependencies": {
+    "babelify": "^6.1.3",
+    "browserify": "^11.0.1",
+    "chalk": "^1.1.1",
+    "exorcist": "^0.4.0",
+    "minimist": "^1.1.3",
+    "mkdirp": "^0.5.1",
+    "uglifyify": "^3.0.1"
+  },
+  "devDependencies": {
+    "serve": "^1.4.0",
+    "tape": "^4.2.0"
+  }
+}
