@@ -1,8 +1,8 @@
 {
   "version": 3,
   "sources": [
-    "../node_modules/browserify/node_modules/browser-pack/_prelude.js",
-    "main.js"
+    "../../../node_modules/browserify/node_modules/browser-pack/_prelude.js",
+    "../main.js"
   ],
   "names": [],
   "mappings": "AAAA;;;ACAA,OAAO,CAAC,GAAG,CAAC,KAAK,CAAC,CAAC",

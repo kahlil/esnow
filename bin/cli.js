@@ -1,8 +1,10 @@
 #!/usr/bin/env node
+'use strict';
+var opts;
 var path = require('path');
 var chalk = require('chalk');
 var argv = require('minimist')(process.argv.slice(2));
-var future = require('./lib/future');
+var esnow = require('../lib/esnow');
 
 // Parse command line options.
 var outputFileName = argv.outputFileName || argv.f || 'app.js';
@@ -12,16 +14,16 @@ var outputFile = path.join(process.cwd(), outputPath, outputFileName);
 var prod = argv.prod || argv.p || false;
 
 if (outputPath === '' || entryFile === '') {
-	return console.error(chalk.red('Please specify outputPath and entryFile!'));
+  return console.error(chalk.red('Please specify outputPath and entryFile!'));
 }
 
-var opts = {
-	outputFileName: outputFileName,
-	outputPath: path.join(process.cwd(), outputPath),
-	entryFile: path.join(process.cwd(), entryFile),
-	outputFile: outputFile,
-	mapFile: outputFile + '.map',
-	prod: prod
+opts = {
+  outputFileName: outputFileName,
+  outputPath: path.join(process.cwd(), outputPath),
+  entryFile: path.join(process.cwd(), entryFile),
+  outputFile: outputFile,
+  mapFile: outputFile + '.map',
+  prod: prod
 };
 
-future(opts);
+esnow(opts);

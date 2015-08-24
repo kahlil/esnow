@@ -1,1 +1,3 @@
-module.exports = require('./lib/future');
+'use strict';
+
+module.exports = require('./lib/esnow');
