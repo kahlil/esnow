@@ -15,7 +15,7 @@ Install `esnow` with npm.
 npm install esnow --save-dev
 ```
 
-Use it in your package.json `scripts` field. Specify your entryfile with the `-e` option and the output folder with the `-o` option.
+Add an `esnow` call it to your package.json `scripts` field. Specify your entryfile with the `-e` option and the output folder with the `-o` option.
 
 ```js
 "scripts": {
@@ -29,7 +29,7 @@ Execute it with npm.
 npm run js
 ```
 
-Enjoy writing ES_FUTURE_ code and debugging it easily via source maps.
+Enjoy writing ESXXXX code and debugging it easily via source maps.
 
 ## Options
 
