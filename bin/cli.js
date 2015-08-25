@@ -13,7 +13,7 @@ var outputFile = path.join(process.cwd(), outputPath, outputFileName);
 var prod = argv.prod || argv.p || false;
 
 if (outputPath === '' || entryFile === '') {
-  console.error(chalk.red('Please specify outputPath and entryFile!'));
+  console.error('Please specify ' + chalk.green('--outputPath') + ' and ' + chalk.green('--entryFile') + '!');
   process.exit(1);
 }
 
