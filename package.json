@@ -1,6 +1,6 @@
 {
   "name": "esnow",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Write ESXXXX JavaScript in a common way with Browserify and Babelify including extracted source maps and Uglifyify for production builds.",
   "main": "index.js",
   "scripts": {
@@ -9,8 +9,8 @@
     "clean": "trash test/fixtures/out"
   },
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/distilledhype/esnow.git"
+    "type": "git",
+    "url": "https://github.com/distilledhype/esnow.git"
   },
   "keywords": [
     "es6",
