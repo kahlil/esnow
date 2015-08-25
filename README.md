@@ -46,6 +46,7 @@ Enjoy writing **ESXXXX** code with Node packages and debugging it easily via sou
 - add better cli with help with [`commander`](https://www.npmjs.com/package/commander)
 - use `package.json` for Browserify transforms
 - add watchify option
+- rewrite this package with `esnow`
 
 # License
 
