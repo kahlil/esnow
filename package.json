@@ -4,7 +4,7 @@
   "description": "Write ESXXXX JavaScript in a common way with Browserify and Babelify including extracted source maps and Uglifyify for production builds.",
   "main": "index.js",
   "scripts": {
-    "test": "tape test/*.js | faucet",
+    "test": "tape test/*.js | faucet && trash test/fixtures/out",
     "test-compile": "node bin/cli.js -e test/fixtures/main.js -o test/fixtures/out",
     "clean": "trash test/fixtures/out"
   },
