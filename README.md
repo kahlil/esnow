@@ -45,6 +45,7 @@ Enjoy writing **ESXXXX** code while use Node packages and debugging it easily vi
 - write better tests
 - add better cli with help with [`commander`](https://www.npmjs.com/package/commander)
 - use `package.json` for Browserify transforms
+- add watchify option
 
 # License
 
