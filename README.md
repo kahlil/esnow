@@ -49,4 +49,4 @@ Enjoy writing **ESXXXX** code with Node packages and debugging it easily via sou
 
 # License
 
-MIT
+MIT © [Kahlil Lechelt](http://kahlil.info)
