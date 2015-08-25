@@ -29,7 +29,7 @@ Execute it with npm.
 npm run js
 ```
 
-Enjoy writing ESXXXX code and debugging it easily via source maps.
+Enjoy writing **ESXXXX** code while use Node packages and debugging it easily via source maps.
 
 ## Options
 
@@ -43,7 +43,7 @@ Enjoy writing ESXXXX code and debugging it easily via source maps.
 # Todo
 
 - write better tests
-- add better cli with help with [commander](https://www.npmjs.com/package/commander)
+- add better cli with help with [`commander`](https://www.npmjs.com/package/commander)
 - use `package.json` for Browserify transforms
 
 # License
