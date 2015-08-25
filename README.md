@@ -1,17 +1,21 @@
 # esnow
 
 The **_FUTURE_** is **_NOW_**.  
-Write future JavaScript in a common way with [`browserify`](https://www.npmjs.com/package/browserify) and [`babelify`](https://www.npmjs.com/package/babelify) including source maps support via [`exorcist`](https://www.npmjs.com/package/exorcist) and [`uglifyify`](https://www.npmjs.com/package/uglifyify) for production builds.
+Write future JavaScript now everywhere all the time in a snap!  
+
+This package configures [`browserify`](https://www.npmjs.com/package/browserify) with [`babelify`](https://www.npmjs.com/package/babelify), includes source maps support via [`exorcist`](https://www.npmjs.com/package/exorcist) and uses [`uglifyify`](https://www.npmjs.com/package/uglifyify) for production builds.
+
+It is very easy to use.
 
 ## Usage
 
 Install `esnow` with npm.
 
-```
+```sh
 npm install esnow --save-dev
 ```
 
-Use it in your package.json `scripts` field.
+Use it in your package.json `scripts` field. Specify your entryfile with the `-e` option and the output folder with the `-o` option.
 
 ```js
 "scripts": {
@@ -21,7 +25,7 @@ Use it in your package.json `scripts` field.
 
 Execute it with npm.
 
-```
+```sh
 npm run js
 ```
 
@@ -40,7 +44,8 @@ Enjoy writing ES_FUTURE_ code and debugging it easily via source maps.
 
 - write better tests
 - add better cli with help with [commander](https://www.npmjs.com/package/commander)
-- use `package.json` for Browserify transforms.
+- use `package.json` for Browserify transforms
 
 # License
+
 MIT
