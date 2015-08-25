@@ -3,7 +3,7 @@ var opts;
 var path = require('path');
 var chalk = require('chalk');
 var argv = require('minimist')(process.argv.slice(2));
-var esnow = require('../lib/esnow');
+var esnow = require('../lib/');
 
 // Parse command line options.
 var outputFileName = argv.outputFileName || argv.f || 'app.js';
@@ -11,6 +11,7 @@ var outputPath = argv.outputPath || argv.o || '';
 var entryFile = argv.entryFile || argv.e || '';
 var outputFile = path.join(process.cwd(), outputPath, outputFileName);
 var prod = argv.prod || argv.p || false;
+var watch = argv.watch || argv.w || false;
 
 if (outputPath === '' || entryFile === '') {
   console.error('Please specify ' + chalk.green('--outputPath') + ' and ' + chalk.green('--entryFile') + '!');
@@ -24,6 +25,7 @@ opts = {
   outputFile: outputFile,
   mapFile: outputFile + '.map',
   prod: prod,
+  watch: watch,
 };
 
 esnow(opts);

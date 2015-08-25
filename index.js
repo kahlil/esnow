@@ -1,3 +1,1 @@
-'use strict';
-
-module.exports = require('./lib/esnow');
+module.exports = require('./lib/');
