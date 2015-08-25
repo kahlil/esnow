@@ -1,4 +1,4 @@
-# ES_NOW_
+# esnow
 
 The **_FUTURE_** is **_NOW_**.  
 Write future JavaScript in a common way with [`browserify`](https://www.npmjs.com/package/browserify) and [`babelify`](https://www.npmjs.com/package/babelify) including source maps support via [`exorcist`](https://www.npmjs.com/package/exorcist) and [`uglifyify`](https://www.npmjs.com/package/uglifyify) for production builds.
@@ -40,6 +40,7 @@ Enjoy writing ES_FUTURE_ code and debugging it easily via source maps.
 
 - write better tests
 - add better cli with help with [commander](https://www.npmjs.com/package/commander)
+- use `package.json` for Browserify transforms.
 
 # License
 MIT
