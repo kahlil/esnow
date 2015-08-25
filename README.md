@@ -40,7 +40,7 @@ Enjoy writing **ESXXXX** code with Node packages and debugging it easily via sou
 --outputFileName, -f  Name of the output file defaults to "app.js".
 ```
 
-# Todo
+## Todo
 
 - write better tests
 - add better cli with help with [`commander`](https://www.npmjs.com/package/commander)
