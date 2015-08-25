@@ -29,7 +29,7 @@ Execute it with npm.
 npm run js
 ```
 
-Enjoy writing **ESXXXX** code while use Node packages and debugging it easily via source maps.
+Enjoy writing **ESXXXX** code with Node packages and debugging it easily via source maps.
 
 ## Options
 
