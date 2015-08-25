@@ -1,6 +1,6 @@
 # esnow
 
-The **_FUTURE_** is **_NOW_**.  
+The **_FUTURE_** is **now**.  
 Write future JavaScript now everywhere all the time in a snap!  
 
 This package configures [`browserify`](https://www.npmjs.com/package/browserify) with [`babelify`](https://www.npmjs.com/package/babelify), includes source maps support via [`exorcist`](https://www.npmjs.com/package/exorcist) and uses [`uglifyify`](https://www.npmjs.com/package/uglifyify) for production builds.
