@@ -15,7 +15,7 @@ Install `esnow` with npm.
 npm install esnow --save-dev
 ```
 
-Add an `esnow` call it to your package.json `scripts` field. Specify your entryfile with the `-e` option and the output folder with the `-o` option.
+Add an `esnow` call it to your package.json `scripts` field. Specify your entryfile with the `-e` option and the output folder with the `-o` option. `esnow` will produce an `app.js` and an `app.js.map` in your output folder.
 
 ```js
 "scripts": {
