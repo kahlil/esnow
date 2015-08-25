@@ -1,7 +1,7 @@
 # ES_NOW_
 
 The **_FUTURE_** is **_NOW_**.  
-Write future JavaScript in a common way with [Browserify]() and [Babelify]() including source maps support and [Uglifyify]() for production builds.
+Write future JavaScript in a common way with [`browserify`](https://www.npmjs.com/package/browserify) and [`babelify`](https://www.npmjs.com/package/babelify) including source maps support via [`exorcist`](https://www.npmjs.com/package/exorcist) and [`uglifyify`](https://www.npmjs.com/package/uglifyify) for production builds.
 
 ## Usage
 
@@ -35,6 +35,11 @@ Enjoy writing ES_FUTURE_ code and debugging it easily via source maps.
           --prod, -p  Production mode (minifies the code).
 --outputFileName, -f  Name of the output file defaults to "app.js".
 ```
+
+# Todo
+
+- write better tests
+- add better cli with help with [commander](https://www.npmjs.com/package/commander)
 
 # License
 MIT

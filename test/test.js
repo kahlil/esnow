@@ -2,29 +2,17 @@
 
 var test = require('tape');
 var spawn = require('child_process').spawn;
+var isThere = require('is-there');
 var testCompile = spawn('npm', ['run', 'test-compile']);
 
-testCompile.stdout.on('data', function (data) {
-  console.log('stdout: ' + data);
-});
+var paths = ['test/fixtures/out/app.js', 'test/fixtures/out/app.js.map'];
 
-testCompile.stderr.on('data', function (data) {
-  console.log('stderr: ' + data);
-});
+test('should generate app.js and app.js.map', function(t) {
+  t.plan(2);
 
-testCompile.on('close', function (code) {
-  console.log('child process exited with code ' + code);
+  testCompile.on('close', function(code) {
+    paths.forEach(function(p) {
+      t.equal(isThere(p), true);
+    });
+  });
 });
-
-// test('timing test', function (t) {
-//   var start;
-//
-//   t.plan(2);
-//
-//   t.equal(typeof Date.now, 'function');
-//   start = Date.now();
-//
-//   setTimeout(function () {
-//     t.equal(Date.now() - start, 100);
-//   }, 100);
-// });

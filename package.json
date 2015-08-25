@@ -4,9 +4,9 @@
   "description": "Write ESXXXX JavaScript in a common way with Browserify and Babelify including extracted source maps and Uglifyify for production builds.",
   "main": "index.js",
   "scripts": {
-    "test": "tape test/*.js",
-    "test-compile": "esnow -e test/demo/main.js -o test/demo/out",
-    "clean": "trash test/demo/out"
+    "test": "tape test/*.js | faucet",
+    "test-compile": "node bin/cli.js -e test/fixtures/main.js -o test/fixtures/out",
+    "clean": "trash test/fixtures/out"
   },
   "keywords": [
     "babel",
@@ -30,7 +30,13 @@
     "watchify": "^3.3.1"
   },
   "devDependencies": {
+    "babel-eslint": "^4.0.10",
+    "eslint": "^1.2.1",
+    "eslint-config-airbnb": "0.0.8",
+    "faucet": "0.0.1",
+    "is-there": "^4.0.0",
     "serve": "^1.4.0",
-    "tape": "^4.2.0"
+    "tape": "^4.2.0",
+    "trash": "^2.0.0"
   }
 }
