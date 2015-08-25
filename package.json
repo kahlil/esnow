@@ -8,7 +8,15 @@
     "test-compile": "node bin/cli.js -e test/fixtures/main.js -o test/fixtures/out",
     "clean": "trash test/fixtures/out"
   },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/distilledhype/esnow.git"
+  },
   "keywords": [
+    "es6",
+    "es7",
+    "es2015",
+    "es2016",
     "babel",
     "browserify",
     "sourcemaps",
