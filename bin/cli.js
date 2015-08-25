@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-'use strict';
 var opts;
 var path = require('path');
 var chalk = require('chalk');
@@ -14,7 +13,8 @@ var outputFile = path.join(process.cwd(), outputPath, outputFileName);
 var prod = argv.prod || argv.p || false;
 
 if (outputPath === '' || entryFile === '') {
-  return console.error(chalk.red('Please specify outputPath and entryFile!'));
+  console.error(chalk.red('Please specify outputPath and entryFile!'));
+  process.exit(1);
 }
 
 opts = {
@@ -23,7 +23,7 @@ opts = {
   entryFile: path.join(process.cwd(), entryFile),
   outputFile: outputFile,
   mapFile: outputFile + '.map',
-  prod: prod
+  prod: prod,
 };
 
 esnow(opts);

@@ -3,6 +3,11 @@
   "rules": {
     "no-var": 0,
     "no-console": 0,
-    "strict": 0
+    "strict": [2, "global"],
+    "func-names": 0
+  },
+  "env": {
+    "node": true,
+    "browser": false
   }
 }
