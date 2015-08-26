@@ -84,7 +84,6 @@ Enjoy writing **ESXXXX** code with Node packages and debugging it easily via sou
 
 ## Todo
 
--
 - write better tests
 - add better cli with help with [`commander`](https://www.npmjs.com/package/commander)
 - use `package.json` for Browserify transforms
