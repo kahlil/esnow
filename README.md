@@ -26,7 +26,7 @@ Add an `esnow` call it to your package.json `scripts` field. Specify your entryf
 
 ```js
 "scripts": {
-	"js": "esnow -e js/main.js -o out/js"
+  "js": "esnow -e js/main.js -o out/js"
 }
 ```
 
@@ -34,7 +34,7 @@ If you want to use Watchify just add `-w`.
 
 ```js
 "scripts": {
-	"jsw": "esnow -e js/main.js -o out/js -w"
+  "jsw": "esnow -e js/main.js -o out/js -w"
 }
 ```
 
@@ -77,7 +77,7 @@ Enjoy writing **ESXXXX** code with Node packages and debugging it easily via sou
 ```
     --outputPath, -o  Pass the output path (required).
      --entryFile, -e  Path to the entry file (required).
-		     --watch, -w  Watch and compile your files with watchify.
+         --watch, -w  Watch and compile your files with watchify.
           --prod, -p  Production mode (minifies the code).
 --outputFileName, -f  Name of the output file defaults to "app.js".
 ```
