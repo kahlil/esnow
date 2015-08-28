@@ -3,7 +3,8 @@
 Welcome to the **_FUTURE_**.  
 Write future JavaScript now everywhere all the time in a snap!
 
-`esnow` configures Browserify with Babel so that you can write all future JavaScript syntax Babel supports while using Node packages. It compiles your code into one ES5 file ready for the browser and generates separate source maps.  
+`esnow` configures Browserify with Babel so that you can write all future JavaScript syntax Babel supports while using Node packages.
+It compiles your code into one ES5 file ready for the browser and generates separate source maps.  
 Once you are ready for production you can generate an uglified version of your app.
 
 ## Details
@@ -64,6 +65,12 @@ Then go ahead and import it in your program with the ES2015 module syntax:
 
 ```js
 import someCoolPackage from 'some-cool-package';
+```
+
+Then use it!
+
+```js
+someCoolPackage();
 ```
 
 The Babelify transform transpiles this to a CommonJS `require` statement and passes it on to Browserify to bundle it up with your program.
