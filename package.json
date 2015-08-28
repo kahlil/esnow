@@ -1,6 +1,6 @@
 {
   "name": "esnow",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "Write ESXXXX JavaScript in a common way with Browserify and Babelify including extracted source maps and Uglifyify for production builds.",
   "main": "index.js",
   "scripts": {
