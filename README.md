@@ -50,6 +50,24 @@ or
 npm run jsw
 ```
 
+### Using Node Packages
+
+Because we are using Browserify you can install and use node packages in your program of course.
+
+Install a package as a devDependency:
+
+```sh
+npm install --save-dev some-cool-package
+```
+
+Then go ahead and import it in your program with the ES2015 module syntax:
+
+```js
+import someCoolPackage from 'some-cool-package';
+```
+
+The Babelify transform transpiles this to a CommonJS `require` statement and passes it on to Browserify to bundle it up with your program.
+
 ## Global Install
 
 You can also install and use it globally.
