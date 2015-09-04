@@ -1,7 +1,7 @@
 {
   "name": "esnow",
   "version": "1.0.17",
-  "description": "Write ESXXXX JavaScript in a common way with Browserify and Babelify including extracted source maps and Uglifyify for production builds.",
+  "description": "Write ES2015 for the browser, import Node packages with the ES2015 module syntax and generate separate source maps.",
   "main": "index.js",
   "scripts": {
     "test": "tape test/*.js | faucet && trash test/fixtures/out",
