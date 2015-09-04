@@ -1,15 +1,9 @@
 # esnow
 
-Welcome to the **_FUTURE_**.  
-Write future JavaScript now everywhere all the time in a snap!
+Write ES2015 for the browser, import Node packages with the ES2015 module syntax and generate separate source maps.
 
-`esnow` configures Browserify with Babel so that you can write all future JavaScript syntax Babel supports while using Node packages.
-It compiles your code into one ES5 file ready for the browser and generates separate source maps.  
-Once you are ready for production you can generate an uglified version of your app.
-
-## Details
-
-This package configures [`browserify`](https://www.npmjs.com/package/browserify) with [`babelify`](https://www.npmjs.com/package/babelify), includes source maps support via [`exorcist`](https://www.npmjs.com/package/exorcist) and uses [`uglifyify`](https://www.npmjs.com/package/uglifyify) for production builds.
+`esnow` is a Node package that preconfigures Browserify including the Babelify and Uglifyify transforms. It generates
+separate source map files using Exorcist.
 
 For watching and compiling changed files esnow uses [`watchify`](https://www.npmjs.com/package/watchify). Watchify increases compile speed after the first compile because it uses caching.
 
