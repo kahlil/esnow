@@ -6,9 +6,9 @@ var argv = require('minimist')(process.argv.slice(2));
 var esnow = require('../lib/');
 
 // Parse command line options.
-var outputFileName = argv.outputFileName || argv.f || 'app.js';
-var outputPath = argv.outputPath || argv.o || '';
 var entryFile = argv.entryFile || argv.e || '';
+var outputFileName = argv.outputFileName || argv.f || path.basename(entryFile);
+var outputPath = argv.outputPath || argv.o || '';
 var outputFile = path.join(process.cwd(), outputPath, outputFileName);
 var prod = argv.prod || argv.p || false;
 var watch = argv.watch || argv.w || false;

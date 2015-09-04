@@ -17,7 +17,7 @@ Install `esnow` with npm.
 npm install esnow --save-dev
 ```
 
-Add an `esnow` call it to your package.json `scripts` field. Specify your entryfile with the `-e` option and the output folder with the `-o` option. `esnow` will produce an `app.js` and an `app.js.map` in your output folder.
+Add an `esnow` call it to your package.json `scripts` field. Specify your entryfile with the `-e` option and the output folder with the `-o` option. `esnow` will produce an `main.js` and an `main.js.map` in your output folder.
 
 ```js
 "scripts": {
@@ -98,7 +98,7 @@ Enjoy writing **ESXXXX** code with Node packages and debugging it easily via sou
      --entryFile, -e  Path to the entry file (required).
          --watch, -w  Watch and compile your files with watchify.
           --prod, -p  Production mode (minifies the code).
---outputFileName, -f  Name of the output file defaults to "app.js".
+--outputFileName, -f  Name of the output file defaults to `--entryFile`.
 ```
 
 ## Todo
