@@ -6,17 +6,25 @@ var argv = require('minimist')(process.argv.slice(2));
 var esnow = require('../lib/');
 
 // Parse command line options.
-var entryFile = argv.entryFile || argv.e || '';
+var entryFile = argv.entryFile || argv.e || false;
+
+if (entryFile === false) {
+  console.error('Please specify your',  chalk.green('--entryFile') + '.');
+  process.exit(1);
+}
+
+/* eslint vars-on-top:0 */
 var outputFileName = argv.outputFileName || argv.f || path.basename(entryFile);
-var outputPath = argv.outputPath || argv.o || '';
+var outputPath = argv.outputPath || argv.o || false;
+
+if (outputPath === false) {
+  console.error('Please specify your', chalk.green('--outputPath') + '.');
+  process.exit(1);
+}
+
 var outputFile = path.join(process.cwd(), outputPath, outputFileName);
 var prod = argv.prod || argv.p || false;
 var watch = argv.watch || argv.w || false;
-
-if (outputPath === '' || entryFile === '') {
-  console.error('Please specify ' + chalk.green('--outputPath') + ' and ' + chalk.green('--entryFile') + '!');
-  process.exit(1);
-}
 
 opts = {
   outputFileName: outputFileName,
