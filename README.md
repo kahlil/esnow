@@ -98,7 +98,7 @@ Enjoy writing **ESXXXX** code with Node packages and debugging it easily via sou
      --entryFile, -e  Path to the entry file (required).
          --watch, -w  Watch and compile your files with watchify.
           --prod, -p  Production mode (minifies the code).
---outputFileName, -f  Name of the output file defaults to `--entryFile`.
+--outputFileName, -f  Name of the output file defaults to the basename of `--entryFile`.
 ```
 
 ## Todo
@@ -107,6 +107,11 @@ Enjoy writing **ESXXXX** code with Node packages and debugging it easily via sou
 - add better cli with help with [`commander`](https://www.npmjs.com/package/commander)
 - use `package.json` for Browserify transforms
 - refactor this package to es6
+
+## Changelog
+
+### v2.0.0
+* The output filename does not default to "app.js" anymore. It defaults to the filename of your entryfile. Feature added by @andreruffert.
 
 # License
 
