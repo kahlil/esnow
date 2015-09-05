@@ -1,6 +1,6 @@
 {
   "name": "esnow",
-  "version": "1.0.18",
+  "version": "1.1.0",
   "description": "Write ES2015 for the browser, import Node packages with the ES2015 module syntax and generate separate source maps.",
   "main": "index.js",
   "scripts": {
