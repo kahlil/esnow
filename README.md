@@ -1,5 +1,7 @@
 # esnow - DEPRECATED
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/kahlil/esnow.svg)](https://greenkeeper.io/)
+
 _**This repo is not being maintained. I recommend you use [budo](http://npm.im/budo) instead.**_
 
 Write ES2015 for the browser, import Node packages with the ES2015 module syntax and generate separate source maps.
